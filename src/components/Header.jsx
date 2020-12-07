@@ -33,7 +33,7 @@ export default function Header(props) {
 
     <header className="navbar-container">
         <nav className="centroHeader">
-          <div className="user-name" onClick={props.menuFn}>
+          <div className="user-name col-6" onClick={props.menuFn}>
             <Avatar className={classes.avatar}>
               <img alt="profile image" src={props.user.providerData[0].photoURL} className="img-avatar"/>
             </Avatar>
@@ -41,7 +41,14 @@ export default function Header(props) {
             <DotsVerticalOutline className="menu" />
           </div>
 
-          {props.menu ? <div className="sig-out" onClick={props.signOut} >Sign Out</div> : null}
+          {props.menu ? <div className="sig-out" onClick={props.signOut} >
+          
+            <ul className="navbar">
+                <li>
+                  <Link to="/">Sing Out</Link>
+                </li>
+            </ul>
+          </div> : null}
 
           <div className="navbar-login">
             

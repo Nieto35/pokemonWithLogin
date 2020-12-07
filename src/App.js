@@ -1,4 +1,3 @@
-import './App.css';
 import React, {useState} from "react";
 import firebase, {auth} from "./firebase/config";
 import SignIn from './components/SignIn';
@@ -8,6 +7,7 @@ import Header from "./components/Header";
 import Pokemon from "./components/Pokemon";
 import PrivateRoute from "./components/PrivateRoute";
 import Profile from "./components/Profile";
+import './App.css';
 
 function App() {
   //Provedor de autenticacion con google
